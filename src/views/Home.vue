@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <transition-group class="row" tag="div" name="list">
+    <div class="row" tag="div" name="list">
       <SellerImage
         class="col-md-4 col-sm-6"
         v-for="seller in sellers"
@@ -49,7 +49,7 @@
         :key="seller.id"
         data-aos="fade-in"
       ></SellerImage>
-    </transition-group>
+    </div>
     <EmptyMessage v-if="noImages"></EmptyMessage>
     <Modal v-if="showWinner" @close="closeModal">
       <div class="content" slot="content">
