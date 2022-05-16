@@ -4,7 +4,7 @@
     <div class="image-card">
       <div class="img-holder"><img :src="seller.image.regular" /></div>
       <div class="image-card-footer mb-2">
-        <div class="image-card-seller mt-2">{{seller.name}}</div><button class="btn btn-sm btn-primary" v-if="allowLike" @click="addPoints()">Me gusta</button>
+        <div class="image-card-seller mt-2">{{seller.name}}</div><button class="btn btn-sm btn-primary" @click="addPoints()">Me gusta</button>
       </div>
     </div>
   </div>
